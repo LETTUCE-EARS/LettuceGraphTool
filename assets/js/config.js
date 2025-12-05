@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = [],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -15,10 +15,10 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
       alt_augment = true,                           // Display augment card in phone list, e.g. review sore, shop link
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "CrinGraph",                 // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
+      watermark_text = "",                 // Optional. Watermark appears behind graphs
+      watermark_image_url = "", // Optional. If image file is in same directory as config, can be just the filename
       rig_description = "clone IEC 711",            // Optional. Labels the graph with a description of the rig used to make the measurement, e.g. "clone IEC 711"
-      page_title = "CrinGraph",                     // Optional. Appended to the page title if share URLs are enabled
+      page_title = "Lettuce Graph Tool",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -41,39 +41,28 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["Haruto 2024","Haruto 2021"] },
-    { type:"Neutral",    files:["KEMAR DF","IEF Neutral 2023","Etymotic"] },
-    { type:"Reviewer",   files:["Antdroid","Banbeucmas","HBB","Precogvision","Super Review 22","Timmy","VSG"] },
-    { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","AutoEQ","Rtings","Sonarworks"] }
+    { type:"Neutral",           files:["Diffuse Field", "Etymotic", "Free Field", "IEF Neutral"] },
+    { type:"Preference",        files:["Harman IE 2019v2", "Harman IE 2017v1", "Harman IE 2017v2", "Harman IE 2016", "Harman Adjusted"] },
+    { type:"Reviewer / Other",  files:["Bad Guy", "Antdroid", "Banbeucmas", "Crinacle", "Haruto 2021", "Haruto 2024", "Haruto \u{1F171}\u{FE0F}ass", "IEF 2023", "Precogvision", "Super Review 21", "Super Review 22", "Timmy", "VSG"] },
+    { type:"Measurement Rigs",  files:["711 to 5128 (Delta)", "5128 to 711 (Delta)", "Innerfidelity ID", "Rtings", "Sonarworks"] }
 ];
 
 // Haruto's Addons
-const  preference_bounds_name = "Bounds",              // Preference bounds name
+const  preference_bounds_name = "Preference Bounds",   // Preference bounds name
        preference_bounds_dir = "assets/pref_bounds/",  // Preference bounds directory
        preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
        allowSquigDownload = false,                     // If true, allows download of measurement data
-       // PHONE_BOOK = "phone_book.json",              // Path to phone book JSON file         /* UNCOMMENT THIS IF YOU WANT TO MOVE PHONEBOOK OUTSIDE AGAIN */
+       // PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file         /* UNCOMMENT THIS IF YOU WANT TO MOVE PHONEBOOK OUTSIDE AGAIN */
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "KEMAR DF",                   // Default RAW DF name
+       default_DF_name = "Diffuse Field",              // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
+       default_bass_shelf = 0,                         // Default Custom DF bass shelf value
        default_tilt = -0.8,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
-       compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
-       allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
-
-
-const harmanFilters = [
-    { name: "Harman C1 2024 IE", tilt: -0.9, bass_shelf: 1, ear: 0, treble: 0.5 },
-    { name: "Harman C2 2024 IE", tilt: -0.3, bass_shelf: .5, ear: -0.2, treble: 1 },
-    { name: "Harman C3 2024 IE", tilt: -2.1, bass_shelf: 0, ear: 0, treble: 10 },
-    { name: "Harman C4 2024 IE", tilt: -2.1, bass_shelf: 0, ear: 0.5, treble: 3.7 },
-    { name: "Harman 2013 OE", tilt: 0, bass_shelf: 4.8, ear: 0, treble: -4.4 },
-    { name: "Harman 2015 OE", tilt: 0, bass_shelf: 6.6, ear: 0, treble: -1.4 },
-    { name: "Harman 2018 OE", tilt: 0, bass_shelf: 6.6, ear: -1.8, treble: -3 },
-]
+       tiltableTargets = ["Diffuse Field"],            // Targets that are allowed to be tilted
+       compTargets = ["Diffuse Field"],                // Targets that are allowed to be used for compensation
+       allowCreatorSupport = false;                    // Allow the creator to have a button top right to support them
 
 // *************************************************************
 // Functions to support config options set above; probably don't need to change these
@@ -107,12 +96,12 @@ function watermark(svg) {
     let wmSq = svg.append("g")
         .attr("opacity",0.2);
     
-    wmSq.append("image")
-        .attrs({x:652, y:254, width:100, height:94, "class":"wm-squiglink-logo", "xlink:href":"assets/images/squiglink-giggle.svg"});
+    // wmSq.append("image")
+    //     .attrs({x:652, y:254, width:100, height:94, "class":"wm-squiglink-logo", "xlink:href":"assets/images/squiglink-giggle.svg"});
     
     wmSq.append("text")
         .attrs({x:641, y:314, "font-size":10, "transform":"translate(0,0)", "text-anchor":"end", "class":"wm-squiglink-address"})
-        .text("squig.link/lab/harutohiroki");
+        .text("");
 }
 
 
@@ -249,8 +238,8 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "HarutoHiroki",
-    headerLogoImgUrl = "assets/images/haruto.svg",
+let headerLogoText = "Lettuce Graph Tool",
+    // headerLogoImgUrl = "assets/images/haruto.svg",
     headerLinks = [
     {
         name: "Sample",
@@ -304,5 +293,5 @@ let tutorialDefinitions = [
 
 // Configure paths to extraEQ plugins here
 let extraEQplugins = [
-    '../devicePEQ/plugin.js' // Path to one or more "extraEQ" plugins
+    './devicePEQ/plugin.js' // Path to one or more "extraEQ" plugins
 ];

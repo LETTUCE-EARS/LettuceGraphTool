@@ -15,10 +15,10 @@ const init_phones = ["IEF Neutral Target"],                             // Optio
       alt_augment = true,                           // Display augment card in phone list, e.g. review sore, shop link
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "CrinGraph",                 // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
+      watermark_text = "",                 // Optional. Watermark appears behind graphs
+      watermark_image_url = "", // Optional. If image file is in same directory as config, can be just the filename
       rig_description = "clone IEC 711",            // Optional. Labels the graph with a description of the rig used to make the measurement, e.g. "clone IEC 711"
-      page_title = "CrinGraph",                     // Optional. Appended to the page title if share URLs are enabled
+      page_title = "Lettuce Graph Tool",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for headphones.",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -103,12 +103,12 @@ function watermark(svg) {
     let wmSq = svg.append("g")
         .attr("opacity",0.2);
     
-    wmSq.append("image")
-        .attrs({x:652, y:254, width:100, height:94, "class":"wm-squiglink-logo", "xlink:href":"assets/images/squiglink-giggle.svg"});
+    // wmSq.append("image")
+    //     .attrs({x:652, y:254, width:100, height:94, "class":"wm-squiglink-logo", "xlink:href":"assets/images/squiglink-giggle.svg"});
     
     wmSq.append("text")
         .attrs({x:641, y:314, "font-size":10, "transform":"translate(0,0)", "text-anchor":"end", "class":"wm-squiglink-address"})
-        .text("squig.link/lab/harutohiroki");
+        .text("");
 }
 
 
@@ -245,8 +245,8 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "HarutoHiroki",
-    headerLogoImgUrl = "assets/images/haruto.svg",
+let headerLogoText = "Lettuce Graph Tool",
+    headerLogoImgUrl = "",
     headerLinks = [
     {
         name: "Sample",

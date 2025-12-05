@@ -1,5 +1,5 @@
-# Demo Page
-https://graphtool-demo.harutohiroki.com/
+# Lettuce Graph Tool
+Graph tool based on a modified CrinGraph.
 
 # Changes
 - Changed AutoEQ algorithm to [PEQdB/autoeq-c](https://github.com/peqdb/autoeq-c)
