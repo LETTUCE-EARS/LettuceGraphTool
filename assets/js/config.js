@@ -44,6 +44,7 @@ const targets = [
     { type:"Neutral",    files:["Test"] },
     { type:"Reference",  files:["Lettuce 711 2025","Haruto 2024","Haruto 2021"] },
     { type:"Reviewer",   files:["Precogvision","Super Review 22","Timmy"] },
+    { type:"Gaming",     files:["Black Ops 6","Warzone 2025"] },
     { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","Rtings"] }
 ];
 
