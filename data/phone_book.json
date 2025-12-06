@@ -96,5 +96,21 @@
                 "reviewScore": "7/10"
             }
         ]
+    },
+                {
+        "name": "Xenns",
+        "phones": [
+            {
+                "name": "Tea Pro",
+                "file": [
+                    "Xenns Tea Pro"
+                ],
+                "suffix": [
+                    "(stock balanced tips)"
+                ],
+                "price": "$360",
+                "reviewScore": "6.75/10"
+            }
+        ]
     }
 ]
