@@ -252,15 +252,7 @@ setupGraphAnalytics();
 let headerLogoText = "Lettuce Graph Tool",
     // headerLogoImgUrl = "assets/images/haruto.svg",
     headerLinks = [
-    {
-        name: "Sample",
-        url: "https://sample.com"
-    },
-    {
-        name: "Sample External",
-        url: "https://sample.com",
-        external: true
-    }
+
 ];
 
 // Source: https://www.teachmeaudio.com/mixing/techniques/audio-spectrum
