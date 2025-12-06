@@ -112,5 +112,21 @@
                 "reviewScore": "6.75/10"
             }
         ]
+    },
+                    {
+        "name": "Moondrop",
+        "phones": [
+            {
+                "name": "Lan II Ref",
+                "file": [
+                    "Moondrop Lan II Ref"
+                ],
+                "suffix": [
+                    "(stock tips)"
+                ],
+                "price": "$60",
+                "reviewScore": "4.5/10"
+            }
+        ]
     }
 ]
