@@ -5,13 +5,95 @@
             {
                 "name": "Daybreak",
                 "file": [
+                    "Crinear Daybreak",
                     "Crinear Daybreak UC"
                 ],
                 "suffix": [
-                    "Softears UC tips"
+                    "(stock tips)",
+                    "(Softears UC)"
                 ],
-                "price": "$169",
-                "reviewScore": "3/5"
+                "price": "$170",
+                "reviewScore": "6.5/10"
+            }
+        ]
+    },
+       {
+        "name": "Truthear",
+        "phones": [
+            {
+                "name": "Gate",
+                "file": [
+                    "Truthear Gate"
+                ],
+                "suffix": [
+                    "(stock tips)"
+                ],
+                "price": "$22",
+                "reviewScore": "6.5/10"
+            }
+        ]
+    },
+           {
+        "name": "Kiwi Ears",
+        "phones": [
+            {
+                "name": "Cadenza",
+                "file": [
+                    "Kiwi Cadenza"
+                ],
+                "suffix": [
+                    "(stock tips)"
+                ],
+                "price": "$35",
+                "reviewScore": "7.5/10"
+            }
+        ]
+    },
+        {
+        "name": "7hz",
+        "phones": [
+            {
+                "name": "Zero:2",
+                "file": [
+                    "7hz x Crinacle Zero_2"
+                ],
+                "suffix": [
+                    "(stock tips)"
+                ],
+                "price": "$25",
+                "reviewScore": "6/10"
+            }
+        ]
+    },
+            {
+        "name": "Dunu",
+        "phones": [
+            {
+                "name": "Ito",
+                "file": [
+                    "Dunu x Koto Ito"
+                ],
+                "suffix": [
+                    "(S&S stock tips)"
+                ],
+                "price": "$220",
+                "reviewScore": "7/10"
+            }
+        ]
+    },
+            {
+        "name": "ZiiGaat",
+        "phones": [
+            {
+                "name": "Luna",
+                "file": [
+                    "ZiiGaat Luna"
+                ],
+                "suffix": [
+                    "(stock clear tips)"
+                ],
+                "price": "$380",
+                "reviewScore": "7/10"
             }
         ]
     }
