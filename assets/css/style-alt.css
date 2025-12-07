@@ -462,6 +462,12 @@ ul.header-links a.external:after {
     -webkit-mask-position: center;
 }
 
+#device-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 
 
 /*****

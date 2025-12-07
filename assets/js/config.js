@@ -16,7 +16,7 @@ const init_phones = [],// Optional. Which graphs to display on initial load. Not
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
       watermark_text = "",                 // Optional. Watermark appears behind graphs
-      watermark_image_url = "https://cdn.discordapp.com/attachments/1446474265045106709/1446563448572874772/ry0QuGYZL.png?ex=693470b1&is=69331f31&hm=e072df5e3fa9a2d786083ef4ebe31d6b4003e936bcb372f8e546022bfcb0a485&", // Optional. If image file is in same directory as config, can be just the filename
+      watermark_image_url = "assets/images/lettuce.png", // Optional. If image file is in same directory as config, can be just the filename
       rig_description = "clone IEC 711",            // Optional. Labels the graph with a description of the rig used to make the measurement, e.g. "clone IEC 711"
       page_title = "Lettuce Graph Tool",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
@@ -87,9 +87,10 @@ function watermark(svg) {
         .attr("transform", "translate("+(pad.l+W/2)+","+(pad.t+H/2-20)+")")
         .attr("opacity",0.8);
     
+    let imageSize = 180
     if ( watermark_image_url ) {
         wm.append("image")
-            .attrs({id:'logo', x:-64, y:-64, width:256, height:256, "xlink:href":watermark_image_url, "class":"graph_logo"});
+            .attrs({id:'logo', x:-96, y:-60, width:imageSize, height:imageSize, "xlink:href":watermark_image_url, "class":"graph_logo"});
     }
     
     if ( watermark_text ) {

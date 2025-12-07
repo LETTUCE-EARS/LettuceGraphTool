@@ -282,9 +282,9 @@ doc.html(`
                 <input name="balance-vol" type="range" min="-10" max="10" step="0.1" value="0"></input>
               </div>
               <div class="exports">
-                <button class="import-filters">Import EQ</button>
+                <button class="import-filters">Import Parametric EQ</button>
                 <button class="export-filters">Export Parametric EQ</button>
-                <button class="export-graphic-filters">Export Graphic EQ (Wavelet)</button>
+                <button class="export-graphic-filters">Export Wavelet Graphic EQ</button>
               </div>
               <a style="display: none" id="file-filters-export"></a>
               <form style="display:none"><input type="file" id="file-filters-import" accept=".txt" /></form>

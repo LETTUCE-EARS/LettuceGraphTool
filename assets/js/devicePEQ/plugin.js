@@ -483,7 +483,7 @@ async function initializeDeviceEqPlugin(context) {
               <div id="sub-fiio" class="sub-tab-content active">
                 <h5>FiiO / Jade Audio</h5>
                 <p>Currently, I have tested the following FiiO devices: </p>
-                <ul>
+                <ul id="device-list">
                   <li>JA11</li>
                   <li>KA17</li>
                   <li>KA15</li>
@@ -497,7 +497,7 @@ async function initializeDeviceEqPlugin(context) {
               <div id="sub-walkplay" class="sub-tab-content">
                 <h5>Walkplay-Based Devices</h5>
                 <p>Since Walkplay licenses their DSP technology to multiple brands, the following devices are known to work but many other devices might work:</p>
-                <ul>
+                <ul id="device-list">
                   <li>Moondrop Quark2 DSP (IEM)</li>
                   <li>Moondrop Echo A (Dongle)</li>
                   <li>JCally JM20-Pro (Dongle)</li>
@@ -512,7 +512,7 @@ async function initializeDeviceEqPlugin(context) {
               <div id="sub-tanchjim" class="sub-tab-content">
                 <h5>KTMicro Devices</h5>
                 <p>Currently, I have tested the following KTMicro DSP devices but many others should work</p>
-                <ul>
+                <ul id="device-list">
                   <li>Moondrop CDSP</li>
                   <li>Moondrop Quark2</li>
                   <li>Tanchjim One DSP (IEM)</li>
@@ -532,7 +532,7 @@ async function initializeDeviceEqPlugin(context) {
             <div id="sub-nothing" class="sub-tab-content">
               <h5>Nothing</h5>
               <p>Beta support for Nothing Headphone (1) via Serial USB or Bluetooth connection. Supports reading and writing custom EQ profiles with up to 8 parametric filters.</p>
-              <ul>
+              <ul id="device-list">
                 <li>Nothing Headphone (1) - Beta support</li>
               </ul>
               <p>The Nothing headphones support multiple EQ profiles: Balanced, Voice, More Treble, More Bass, and Custom. Only the Custom profile supports writing parametric EQ filters.</p>
@@ -548,7 +548,7 @@ async function initializeDeviceEqPlugin(context) {
             <div id="sub-luxsin" class="sub-tab-content">
               <h5>Luxsin X9</h5>
               <p>Supports full network-based PEQ control for the Luxsin X9 using its local HTTP interface. You can both read (pull) and write (push) PEQ filters.</p>
-              <ul>
+              <ul id="device-list">
                 <li>Find the X9 IP address in the Luxsin/WalkPlay app.</li>
                 <li>Use "Connect to Device" → "Network", select "Luxsin X9", and enter the IP.</li>
                 <li>Optional: Use "Test IP" to open <code>/dev/info.cgi?action=syncData</code>; you should see encoded text if the IP is correct.</li>
@@ -559,7 +559,7 @@ async function initializeDeviceEqPlugin(context) {
           </div>
 
             <div id="tab-howto" class="tab-content">
-              <ul>
+              <ul id="device-list">
                 <li><strong>Connect to Device:</strong> Open USB prompt and choose your device.</li>
                 <li><strong>Select PEQ Slot:</strong> If supported, choose which EQ slot to view or modify.</li>
                 <li><strong>Pull From Device:</strong> Read and load PEQ filter data into the interface.</li>
