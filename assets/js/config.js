@@ -42,10 +42,10 @@ const init_phones = [],// Optional. Which graphs to display on initial load. Not
 // Specify which targets to display
 const targets = [
     { type:"Neutral",    files:["Test"] },
-    { type:"Reference",  files:["Lettuce 711 2025","Haruto 2024","Haruto 2021"] },
-    { type:"Reviewer",   files:["Precogvision","Super Review 22","Timmy"] },
+    { type:"Reference",  files:["IEF 2023"] },
+    { type:"Reviewer",   files:["Super Review 22"] },
     { type:"Gaming",     files:["Black Ops 6","Warzone 2025"] },
-    { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","Rtings"] }
+    { type:"Preference", files:["IEF Preference 2025","Harman IE 2019v2","Harman IE 2017v2"] }
 ];
 
 // Haruto addons
