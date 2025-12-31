@@ -41,11 +41,11 @@ const init_phones = [],// Optional. Which graphs to display on initial load. Not
 
 // Specify which targets to display
 const targets = [
-    { type:"Neutral",    files:["Neutral Tilt","IEF Neutral 2023","IEF Neutral"] },
+    { type:"Neutral",    files:["Neutral Tilt", "Generic JM-1", "IEF Neutral 2023", "IEF Neutral"] },
     { type:"Reference",  files:["Etymotic"] },
-    { type:"Preference", files:["IEF Preference 2025","Harman IE 2019v2"] },
+    { type:"Preference", files:["IEF Preference 2025", "Harman IE 2019v2"] },
     { type:"Reviewer",   files:["Super 22"] },
-    { type:"Gaming",     files:["Black Ops 6","Warzone 2025"] }
+    { type:"Gaming",     files:["Black Ops 6", "Warzone 2025"] }
     
 ];
 
@@ -56,14 +56,14 @@ const  preference_bounds_name = "Bounds",              // Preference bounds name
        allowSquigDownload = false,                     // If true, allows download of measurement data
        // PHONE_BOOK = "phone_book.json",              // Path to phone book JSON file         /* UNCOMMENT THIS IF YOU WANT TO MOVE PHONEBOOK OUTSIDE AGAIN */
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "Test",                   // Default RAW DF name
+       default_DF_name = "Generic JM-1",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
        default_bass_shelf = 8,                         // Default Custom DF bass shelf value
-       default_tilt = -0.8,                            // Default Custom DF tilt value
+       default_tilt = 0,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
-       default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["Test"],                 // Targets that are allowed to be tilted
-       compTargets = ["Test"],                     // Targets that are allowed to be used for compensation
+       default_treble = -4,                             // Default Custom DF treble gain value
+       tiltableTargets = ["Generic JM-1"],                 // Targets that are allowed to be tilted
+       compTargets = ["Generic JM-1"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
 
 const harmanFilters = [
