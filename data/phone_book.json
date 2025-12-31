@@ -91,14 +91,12 @@
             {
                 "name": "Luna",
                 "file": [
-                    "Ziigaat Luna Stock Clear",
-                    "Ziigaat Luna Stock Gray",
-                    "Ziigaat Luna Coffee"
+                    "Ziigaat Luna Clear",
+                    "Ziigaat Luna Gray"
                 ],
                 "suffix": [
                     "(stock clear tips)",
-                    "(stock gray tips)",
-                    "(coffee tips)"
+                    "(stock gray tips)"
                 ],
                 "price": "$380",
                 "reviewScore": "6.5/10"
@@ -111,8 +109,8 @@
             {
                 "name": "Tea Pro",
                 "file": [
-                    "XENNS Tea Pro Stock Black",
-                    "XENNS Tea Pro Stock White"
+                    "XENNS Tea Pro Black",
+                    "XENNS Tea Pro White"
                 ],
                 "suffix": [
                     "(stock black tips)",
