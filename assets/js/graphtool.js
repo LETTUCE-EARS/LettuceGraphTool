@@ -75,7 +75,7 @@ doc.html(`
 
         <div class="smooth">
           <span>Smooth:</span>
-          <input type="number" inputmode="decimal" id="smooth-level" required min="0" value="5" step="any" onclick="this.focus();this.select()"></input>
+          <input type="number" inputmode="decimal" id="smooth-level" required min="0" value="20" step="any" onclick="this.focus();this.select()"></input>
         </div>
 
         <div class="miscTools">
