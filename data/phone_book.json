@@ -41,7 +41,7 @@
             {
                 "name": "Cadenza",
                 "file": [
-                    "Kiwi Cadenza"
+                    "Kiwi Cadenza Stock"
                 ],
                 "suffix": [
                     "(stock tips)"
@@ -57,7 +57,7 @@
             {
                 "name": "Zero:2",
                 "file": [
-                    "7hz x Crinacle Zero 2"
+                    "7hz Zero2 Stock"
                 ],
                 "suffix": [
                     "(stock tips)"
@@ -73,8 +73,9 @@
             {
                 "name": "Ito",
                 "file": [
-                    "DUNU x Koto Ito S_S",
-                    "DUNU x Koto Ito Candy"
+                    "DUNU Ito S_S",
+                    "DUNU Ito Candy",
+                    "DUNU Ito stock gray"
                 ],
                 "suffix": [
                     "(S&S stock tips)",
@@ -92,11 +93,13 @@
                 "name": "Luna",
                 "file": [
                     "Ziigaat Luna clear",
-                    "Ziigaat Luna gray"
+                    "Ziigaat Luna grey",
+                    "Ziigaat Luna coffee"
                 ],
                 "suffix": [
                     "(stock clear tips)",
-                    "(stock gray tips)"
+                    "(stock gray tips)",
+                    "(coffee tips)"
                 ],
                 "price": "$380",
                 "reviewScore": "6.5/10"
@@ -110,11 +113,13 @@
                 "name": "Tea Pro",
                 "file": [
                     "XENNS Tea Pro black",
-                    "XENNS Tea Pro white"
+                    "XENNS Tea Pro white",
+                    "XENNS Tea Pro sanc balanced"
                 ],
                 "suffix": [
                     "(stock black tips)",
-                    "(stock white tips)"
+                    "(stock white tips)",
+                    "(tang sancai balanced tips)"
                 ],
                 "price": "$360",
                 "reviewScore": "6/10"
