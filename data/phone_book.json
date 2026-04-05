@@ -13,7 +13,7 @@
                     "(shortwide tips)"
                 ],
                 "price": "$170",
-                "reviewScore": "7/10"
+                "reviewScore": "Recommend"
             }
         ]
     },
@@ -31,7 +31,7 @@
                     "(shortwide tips)"
                 ],
                 "price": "$22",
-                "reviewScore": "6/10"
+                "reviewScore": "Recommend"
             }
         ]
     },
@@ -47,7 +47,7 @@
                     "(stock tips)"
                 ],
                 "price": "$35",
-                "reviewScore": "6.5/10"
+                "reviewScore": "Recommend"
             }
         ]
     },
@@ -63,7 +63,7 @@
                     "(stock tips)"
                 ],
                 "price": "$25",
-                "reviewScore": "5/10"
+                "reviewScore": ""
             }
         ]
     },
@@ -82,7 +82,7 @@
                     "(candy stock tips)"
                 ],
                 "price": "$220",
-                "reviewScore": "7/10"
+                "reviewScore": "Recommend"
             }
         ]
     },
@@ -102,7 +102,7 @@
                     "(coffee tips)"
                 ],
                 "price": "$380",
-                "reviewScore": "6.5/10"
+                "reviewScore": "Recommend"
             }
         ]
     },
@@ -122,7 +122,7 @@
                     "(tang sancai balanced tips)"
                 ],
                 "price": "$360",
-                "reviewScore": "6/10"
+                "reviewScore": ""
             }
         ]
     }
