@@ -868,4 +868,9 @@ function addExtra() {
         });
     }
 }
-addExtra();
+
+if ("requestIdleCallback" in window) {
+    requestIdleCallback(addExtra, {timeout: 3000});
+} else {
+    setTimeout(addExtra, 200);
+}

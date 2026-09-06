@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<html>
+<html lang="en">
     <head>
         <title>Lettuce Graph Tool</title>
         <link rel="canonical" href=""/>
-        <meta name="description" content="View and compare frequency response graphs for earphones/headphones."/>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+        <meta name="description" content="View and compare frequency response graphs for earphones."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- <link rel="shortcut icon" type="image/png" href="assets/images/haruto.png"/> -->
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet"/>
+        </noscript>
         
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <!-- <meta name="apple-mobile-web-app-title" content="Haruto's Graph Tool"/> -->
@@ -27,25 +30,25 @@
         <div class="graphtool">
             <noscript>Turn on Javascript</noscript>
         </div>
-        <script src="assets/js/d3.v5.min.js"></script>
-        <script src="assets/js/d3-selection-multi.v1.min.js"></script>
-        <script src="assets/js/fuse.min.js"></script>
-        <script src="assets/js/reinvented-color-wheel.min.js"></script>
-        <script src="assets/js/config.js"></script>
-        <script src="assets/js/autoeq.js"></script>
-        <script src="assets/js/tool_components/equalizer.js"></script>
-        <script src="assets/js/tool_components/listAugment.js"></script>
-        <script src="assets/js/tool_components/saveSvgAsPng.js"></script>
-        <script src="assets/js/graphtool.js"></script>
-        <script src="assets/js/tool_components/smoothing.js"></script>
-        <script src="assets/js/tool_components/normalization.js"></script>
-        <script src="assets/js/tool_components/color.js"></script>
-        <script src="assets/js/tool_components/phoneTable.js"></script>
-        <script src="assets/js/tool_components/prefBounds.js"></script>
-        <script src="assets/js/tool_components/tutorial.js"></script>
-        <script src="assets/js/tool_components/theme.js"></script>
-        <script src="assets/js/tool_components/eqPanel.js"></script>
-        <script src="assets/js/tool_components/90inclusion.js"></script>
+        <script src="assets/js/d3.v5.min.js" defer></script>
+        <script src="assets/js/d3-selection-multi.v1.min.js" defer></script>
+        <script src="assets/js/fuse.min.js" defer></script>
+        <script src="assets/js/reinvented-color-wheel.min.js" defer></script>
+        <script src="assets/js/config.js" defer></script>
+        <script src="assets/js/autoeq.js" defer></script>
+        <script src="assets/js/tool_components/equalizer.js" defer></script>
+        <script src="assets/js/tool_components/listAugment.js" defer></script>
+        <script src="assets/js/tool_components/saveSvgAsPng.js" defer></script>
+        <script src="assets/js/graphtool.js" defer></script>
+        <script src="assets/js/tool_components/smoothing.js" defer></script>
+        <script src="assets/js/tool_components/normalization.js" defer></script>
+        <script src="assets/js/tool_components/color.js" defer></script>
+        <script src="assets/js/tool_components/phoneTable.js" defer></script>
+        <script src="assets/js/tool_components/prefBounds.js" defer></script>
+        <script src="assets/js/tool_components/tutorial.js" defer></script>
+        <script src="assets/js/tool_components/theme.js" defer></script>
+        <script src="assets/js/tool_components/eqPanel.js" defer></script>
+        <script src="assets/js/tool_components/90inclusion.js" defer></script>
         <!-- <script src="assets/js/squigsites.js"></script> -->
         <!-- <script src="https://graphaggregator.harutohiroki.com/graphAggregator.js" defer></script> -->
         <audio id="pinkNoiseAudio" preload="auto" loop>
