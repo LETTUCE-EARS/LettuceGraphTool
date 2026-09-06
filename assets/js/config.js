@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = [],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = [],                             // Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -10,7 +10,7 @@ const init_phones = [],// Optional. Which graphs to display on initial load. Not
       alt_sticky_graph = true,                      // If active graphs overflows the viewport, does the graph scroll with the page or stick to the viewport?
       alt_animated = false,                         // Determines if new graphs are drawn with a 1-second animation, or appear instantly
       alt_header = true,                            // Display a configurable header at the top of the alt layout
-      alt_header_new_tab = false,                   // Clicking alt_header links opens in new tab
+      alt_header_new_tab = true,                   // Clicking alt_header links opens in new tab
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       alt_augment = true,                           // Display augment card in phone list, e.g. review sore, shop link
       site_url = '/',                               // URL of your graph "homepage"
@@ -252,7 +252,7 @@ setupGraphAnalytics();
 
 // If alt_header is enabled, these are the items added to the header
 let headerLogoText = "Lettuce Graph Tool",
-    // headerLogoImgUrl = "assets/images/haruto.svg",
+    headerLogoImgUrl = "",
     headerLinks = [
 
 ];
@@ -298,5 +298,5 @@ let tutorialDefinitions = [
 
 // Configure paths to extraEQ plugins here
 let extraEQplugins = [
-    './devicePEQ/plugin.js' // Path to one or more "extraEQ" plugins
+    '../devicePEQ/plugin.js' // Path to one or more "extraEQ" plugins
 ];

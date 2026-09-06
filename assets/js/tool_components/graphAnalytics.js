@@ -1,7 +1,7 @@
 // Set these variables to your own GTM ID and site name
-let analyticsSite = "HarutoHiroki",                // Site name for attributing analytics events to your site
+let analyticsSite = "Lettuce",                // Site name for attributing analytics events to your site
     analyticsGtmId = "",                 // GTM ID used for analytics. If you don't already have one, you'' need to create a Google Tag Manager account
-    logAnalytics = true;                            // If true, events are logged in console
+    logAnalytics = false;                            // If true, events are logged in console
 
 // Load Google Tag Manager onto the page
 function setupGraphAnalytics() {
